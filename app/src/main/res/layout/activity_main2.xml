@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.demo.wang.cosplay.cosplaywangdemo.Main2Activity">
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/bottom_tab_FindFragment_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--app:tabIndicatorColor="#F10ED7"-->
+        <!--app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
+        <!--app:tabSelectedTextColor="#EE5317"-->
+        <!--app:tabTextColor="#00FF42"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--/>-->
+    <RadioGroup
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/radio1"
+            android:text="tab_1"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/radio2"
+            android:text="tab_2"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/radio3"
+            android:text="tab_3"/>
+
+
+    </RadioGroup>
+    <FrameLayout
+        android:layout_above="@id/bottom_bar"
+
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/bottom_tab_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+
+
+
+</RelativeLayout>
